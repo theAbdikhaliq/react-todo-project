@@ -1,0 +1,69 @@
+/* App.css */
+
+.app {
+ max-width: 400px;
+ margin: 0 auto;
+ padding: 20px;
+ font-family: Arial, sans-serif;
+}
+
+h1 {
+ text-align: center;
+}
+
+.todo-input {
+ display: flex;
+ margin-bottom: 10px;
+}
+
+.todo-input input {
+ flex: 1;
+ padding: 5px;
+ font-size: 16px;
+}
+
+.todo-input button {
+ margin-left: 10px;
+ padding: 5px 10px;
+ font-size: 16px;
+ background-color: #4caf50;
+ color: white;
+ border: none;
+ cursor: pointer;
+}
+
+.todo-input button:hover {
+ background-color: #45a049;
+}
+
+.todo-list li {
+ margin-bottom: 5px;
+ list-style: none;
+ display: flex;
+ align-items: center;
+}
+
+.todo-list li.completed {
+ text-decoration: line-through;
+ opacity: 0.6;
+}
+
+.button-group {
+ margin-left: auto;
+}
+
+.complete-button,
+.delete-button {
+ padding: 5px 10px;
+ font-size: 14px;
+ background-color: #2196f3;
+ color: white;
+ border: none;
+ cursor: pointer;
+ margin-right: 5px;
+}
+
+.complete-button:hover,
+.delete-button:hover {
+ background-color: #0f77d9;
+}
