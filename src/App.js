@@ -15,12 +15,18 @@ function App() {
 
     //add task to todos
     const addOnClick = () => {
-        const id = todos[todos.length - 1].id + 1
+        const id = todos.id === 0 ? 1 : todos[todos.length - 1].id + 1
         const todo = {
             id: id,
             task: newTask
         }
         setTodos([...todos, todo])
+    }
+
+    //delete task
+    const deleteOnClick = (id) => {
+        const remainedTasks = todos.filter(todo => todo.id !== id)
+        setTodos(remainedTasks)
     }
 
 
@@ -38,7 +44,7 @@ function App() {
                         {todo.id}. {todo.task}
                         <div className="button-group">
                             <button className="complete-button">Complete</button>
-                            <button className="delete-button">Delete</button>
+                            <button className="delete-button" onClick={() => deleteOnClick(todo.id)}>Delete</button>
                         </div>
                     </li>
                 ))}
