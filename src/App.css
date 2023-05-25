@@ -44,9 +44,9 @@ h1 {
 }
 
 .todo-list li.completed {
- text-decoration: line-through;
- opacity: 0.6;
-}
+    text-decoration: line-through;
+    opacity: 0.6;
+  }
 
 .button-group {
  margin-left: auto;
